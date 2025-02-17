@@ -3,7 +3,7 @@ name: Sync Discovered API with APIConnect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  INSECURE_SKIP_TLS_VERIFY: 'true'
+  INSECURE_SKIP_TLS_VERIFY: true
   API_HOST: apps.67b1ca818535348782f05e90.ap1.techzone.ibm.com
   PLATFORM_API_PREFIX: apim-demo-mgmt-platform-api-tools
   PROVIDER_ORG: cp4i-demo-org
