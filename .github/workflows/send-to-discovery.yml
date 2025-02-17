@@ -8,7 +8,7 @@ env:
   PLATFORM_API_PREFIX: apim-demo-mgmt-platform-api-tools
   PROVIDER_ORG: cp4i-demo-org
   INSECURE_SKIP_TLS_VERIFY: True
-  API_FILES: APIfolder/JGRACEIVT-1.0.0.json
+  API_FILES: APIFolder/JGRACEIVT-1.0.0.json
   #API_FOLDERS: APIfolder,APIfolderTwo
 
 jobs:
