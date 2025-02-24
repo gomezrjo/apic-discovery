@@ -9,7 +9,7 @@ env:
   PROVIDER_ORG: cp4i-demo-org
   INSECURE_SKIP_TLS_VERIFY: True
   #API_FILES: APIFolder/JGRACEIVT-1.0.0.json
-  API_FOLDERS: APIfolder
+  API_FOLDERS: APIFolder
 
 jobs:
   run-discovery:
