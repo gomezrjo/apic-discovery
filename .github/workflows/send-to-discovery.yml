@@ -3,7 +3,7 @@ name: Send Discovered API to ApiConnect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: apps.67ba7eaa5cdc1e00e52b26c6.ap1.techzone.ibm.com
+  API_HOST: apps.67bd4604ae3e9e263f4c5809.ap1.techzone.ibm.com
   # platform_api_prefix is not required to change for ApiConnect on Cloud
   PLATFORM_API_PREFIX: apim-demo-mgmt-platform-api-tools
   PROVIDER_ORG: cp4i-demo-org
