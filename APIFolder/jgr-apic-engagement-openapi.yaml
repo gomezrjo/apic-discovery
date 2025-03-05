@@ -1,0 +1,57 @@
+swagger: '2.0'
+info:
+  title: jgr-apic-engagement
+  version: 1.0.0
+  description: ''
+basePath: /jgr-apic-engagement
+paths:
+  /message:
+    post:
+      tags:
+        - message
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: message.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/message'
+      responses:
+        '201':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/message'
+      deprecated: false
+      security:
+        - basicAuth: []
+tags:
+  - name: message
+host: >-
+  ace-designer-ai-designer-https-tools.apps.67c49d4c504473f5d4508701.ap1.techzone.ibm.com
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+definitions:
+  message:
+    properties:
+      email:
+        type: string
+      severity:
+        type: number
+        format: double
+      subject:
+        type: string
+      body:
+        type: string
+    required:
+      - email
+    additionalProperties: false
+securityDefinitions:
+  basicAuth:
+    type: basic
